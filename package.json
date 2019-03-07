@@ -2,6 +2,9 @@
   "name": "nuxt-graphql-mongodb-vuetify",
   "version": "1.0.0",
   "description": "My superb Nuxt.js project",
+  "engines": {
+    "node": "10.x"
+  },
   "author": "Evan Jung",
   "private": true,
   "scripts": {
