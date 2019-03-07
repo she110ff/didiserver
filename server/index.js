@@ -8,12 +8,13 @@ const graphqlHTTP = require('express-graphql')
 const bodyParser = require('body-parser')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
+const cors = require('cors')
 const config = require('../nuxt.config.js')
 const app = express()
 let mongo = null
 
 dotenv.config()
-
+app.use(cors()) // enable `cors` to set HTTP response header: Access-Control-Allow-Origin: *
 app.use(
   '/graphql',
   bodyParser.json(),
